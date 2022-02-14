@@ -18,7 +18,7 @@ class CreateBooksTable extends Migration
             $table->string('cover')->nullable(); 
             $table->string('title', 50); 
             $table->string('pengarang', 50); 
-            $table->int('jenis_book_id'); 
+            $table->integer('jenis_book_id'); 
             $table->integer('thn_terbit'); 
             $table->integer('stok'); 
             $table->integer('status'); 

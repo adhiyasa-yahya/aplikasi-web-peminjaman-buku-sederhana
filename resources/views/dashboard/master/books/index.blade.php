@@ -4,9 +4,11 @@
 @section('content_header')
     <div class="d-flex justify-content-between">
         <h1>Data Buku</h1>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-tambah">
-            Tambah Buku
-        </button>
+        @if(auth()->user()->role == "admin")
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-tambah">
+                Tambah Buku
+            </button>
+        @endif
     </div>
 @stop
 
